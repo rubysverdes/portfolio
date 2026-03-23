@@ -1,5 +1,5 @@
 // Defina a data final para a contagem regressiva (30 de outubro de 2025)
-const countdownDate = new Date('October 30, 2025 00:00:00').getTime();
+const countdownDate = new Date('May 30, 2026 00:00:00').getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
