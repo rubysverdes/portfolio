@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - RubysVerdes</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i> RubysVerdes
+            </a>
+            <div class="header-actions">
+                <a href="https://wa.me/5581986935525" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Fale conosco
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Plantas & Vasos</h1>
+            <p>Traga vida e natureza para o seu lar. Escolha sua planta favorita e personalize com vaso e preparo profissional.</p>
+        </div>
+    </section>
+
+    <!-- FILTROS -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="planta">Plantas</button>
+        <button class="filter-btn" data-filter="vaso">Vasos</button>
+        <button class="filter-btn" data-filter="servico">Com Preparo</button>
+    </div>
+
+    <!-- LEGENDA DE PREÇOS -->
+    <div class="price-legend">
+        <span><i class="fas fa-seedling"></i> Planta</span>
+        <span><i class="fas fa-vase"></i> Vaso</span>
+        <span><i class="fas fa-hands"></i> Preparo incluso</span>
+    </div>
+
+    <!-- GRID DE PRODUTOS -->
+    <main class="catalog">
+
+        <!-- CARD 1 -->
+        <article class="card" data-category="planta">
+            <div class="card-badge">Destaque</div>
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1463320726281-696a3cc57c93?w=500&q=80" alt="Orquídea Phalaenopsis" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Orquídea Phalaenopsis</h2>
+                <p class="card-desc">Elegante e delicada, floresce por meses. Ideal para ambientes internos com luz indireta.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta</span>
+                        <strong>R$ 45,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso decorativo</span>
+                        <strong>R$ 35,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(argila, substrato, montagem)</small></span>
+                        <strong>+ R$ 25,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 105,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse na Orquídea Phalaenopsis 🌸" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card" data-category="planta">
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=500&q=80" alt="Suculentas Mix" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Suculentas Mix</h2>
+                <p class="card-desc">Resistentes e encantadoras. Precisam de pouca água e trazem muito charme à decoração.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta (unidade)</span>
+                        <strong>R$ 15,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso de cerâmica</span>
+                        <strong>R$ 22,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(areia grossa, argila, montagem)</small></span>
+                        <strong>+ R$ 18,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 55,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse nas Suculentas Mix 🌵" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card" data-category="planta">
+            <div class="card-badge novidade">Novidade</div>
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?w=500&q=80" alt="Lírio da Paz" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Lírio da Paz</h2>
+                <p class="card-desc">Purifica o ar e traz tranquilidade ao ambiente. Uma das plantas de interior mais populares.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta</span>
+                        <strong>R$ 35,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso esmaltado</span>
+                        <strong>R$ 40,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(argila expandida, substrato, montagem)</small></span>
+                        <strong>+ R$ 22,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 97,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse no Lírio da Paz 🌿" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="card" data-category="planta">
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1604762524889-3e2fcc145683?w=500&q=80" alt="Samambaia Pendente" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Samambaia Pendente</h2>
+                <p class="card-desc">Perfeita para varandas e ambientes úmidos. Suas folhas pendentes criam um efeito visual incrível.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta</span>
+                        <strong>R$ 28,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso suspenso</span>
+                        <strong>R$ 38,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(substrato especial, argila, montagem)</small></span>
+                        <strong>+ R$ 20,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 86,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse na Samambaia Pendente 🌿" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 5 -->
+        <article class="card" data-category="planta">
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500&q=80" alt="Cacto São Jorge" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Cacto São Jorge</h2>
+                <p class="card-desc">Símbolo de proteção e sorte. Planta robusta e de fácil cuidado, ideal para qualquer ambiente.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta</span>
+                        <strong>R$ 32,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso alto de cerâmica</span>
+                        <strong>R$ 55,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(areia, argila, substrato, montagem)</small></span>
+                        <strong>+ R$ 25,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 112,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse na Espada de São Jorge 🗡️" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 6 -->
+        <article class="card" data-category="vaso">
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&q=80" alt="Vaso Artesanal de Barro" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Vaso Artesanal de Barro</h2>
+                <p class="card-desc">Peça única feita à mão. Cada vaso é especial, com texturas e acabamentos exclusivos.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso pequeno (10cm)</span>
+                        <strong>R$ 28,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso médio (20cm)</span>
+                        <strong>R$ 45,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso grande (30cm)</span>
+                        <strong>R$ 68,00</strong>
+                    </div>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse nos vasos artesanais de barro 🏺" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 7 - SERVIÇO -->
+        <article class="card servico-card" data-category="servico">
+            <div class="card-badge servico">Serviço</div>
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&q=80" alt="Serviço de Preparo de Plantas" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Preparo Profissional</h2>
+                <p class="card-desc">Levo o cuidado e o conhecimento até você. Faço o preparo completo da sua planta com os melhores materiais.</p>
+                <div class="service-includes">
+                    <h3><i class="fas fa-list-check"></i> O que está incluso:</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Argila expandida (drenagem)</li>
+                        <li><i class="fas fa-check"></i> Substrato especial por tipo de planta</li>
+                        <li><i class="fas fa-check"></i> Carvão ativo (evita fungos)</li>
+                        <li><i class="fas fa-check"></i> Montagem e plantio no vaso</li>
+                        <li><i class="fas fa-check"></i> Orientação de cuidados</li>
+                        <li><i class="fas fa-check"></i> Identificação da planta</li>
+                    </ul>
+                </div>
+                <div class="card-prices">
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Serviço por planta</span>
+                        <strong>A partir de R$ 18,00</strong>
+                    </div>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse no serviço de preparo de plantas 🌱" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Solicitar serviço
+                </a>
+            </div>
+        </article>
+
+        <!-- CARD 8 -->
+        <article class="card" data-category="planta">
+            <div class="card-img-wrap">
+                <img src="https://images.unsplash.com/photo-1550159930-40066082a4fc?w=500&q=80" alt="Pothos Dourado" loading="lazy">
+            </div>
+            <div class="card-body">
+                <h2 class="card-title">Pothos Dourado</h2>
+                <p class="card-desc">Uma das plantas mais fáceis de cuidar. Cresce em qualquer ambiente e purifica o ar naturalmente.</p>
+                <div class="card-prices">
+                    <div class="price-item">
+                        <i class="fas fa-seedling"></i>
+                        <span>Planta</span>
+                        <strong>R$ 22,00</strong>
+                    </div>
+                    <div class="price-item">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Vaso decorativo</span>
+                        <strong>R$ 30,00</strong>
+                    </div>
+                    <div class="price-item preparo">
+                        <i class="fas fa-hands"></i>
+                        <span>Preparo completo <small>(substrato, argila, montagem)</small></span>
+                        <strong>+ R$ 18,00</strong>
+                    </div>
+                </div>
+                <div class="card-total">
+                    <span>Conjunto completo</span>
+                    <strong>R$ 70,00</strong>
+                </div>
+                <a href="https://wa.me/5581986935525?text=Olá! Tenho interesse no Pothos Dourado 🌿" target="_blank" class="card-btn">
+                    <i class="fab fa-whatsapp"></i> Quero este!
+                </a>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- SEÇÃO DE INFORMAÇÕES -->
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-truck"></i>
+                <h3>Entrega local</h3>
+                <p>Entrego na sua região com cuidado especial para as plantas.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-seedling"></i>
+                <h3>Plantas saudáveis</h3>
+                <p>Todas as plantas são selecionadas e cultivadas com muito carinho.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-headset"></i>
+                <h3>Suporte pós-venda</h3>
+                <p>Tiro dúvidas sobre os cuidados das suas plantas após a compra.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-gift"></i>
+                <h3>Presente especial</h3>
+                <p>Monto kits presenteáveis sob encomenda para qualquer ocasião.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="logo"><i class="fas fa-leaf"></i> RubysVerdes</div>
+        <p>Paisagismo e plantas com amor 💚</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/5581986935525" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5581986935525?text=Olá! Vi o catálogo e gostaria de saber mais 🌿" target="_blank" class="float-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="catalogo.js"></script>
+</body>
+</html>
